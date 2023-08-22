@@ -300,7 +300,48 @@
     cursor: pointer;
 }
 
-.auth-form__form{
-    margin-top: 16px;
 
+.auth-form__input{
+    height: 40px;
+    width: 100%;
+    margin-top: 16px;
+    padding: 0 12px;
+    font-size: 1.4rem;
+    border: 1px solid var(--border-color);
+    border-radius: 2px;
+    outline: none;
+}
+
+.auth-form__input:focus{
+    border: 1px solid #777;
+}
+.auth-form__aside{
+    margin-top: 18px;
+}
+.auth-form__policy-text{
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    text-align: center;
+    color: var(--text-color);
+    padding: 0 12px;
+}
+
+.auth-form__text-link{
+    text-decoration: none;
+    color: var(--primary-color);
+
+}
+
+.auth-form__controls{
+    margin-top: 80px;
+}
+
+.auth-form__controls{
+    display: flex;
+    justify-content: flex-end;
+    pa
+}
+
+.auth-form__controls-back{
+    margin-right: 8px;
 }
