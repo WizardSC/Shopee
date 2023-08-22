@@ -11,6 +11,7 @@
     list-style: none;
     padding-left: 0;
     margin-top: 8px;
+    
 }
 .header__navbar-item{
     margin: 0 8px;
@@ -24,7 +25,7 @@
 .header__navbar-item, 
 .header__navbar-item-link {
     display: inline-block;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     color: var(--white-color);
     text-decoration: none;
     font-weight: 300;
@@ -39,13 +40,14 @@
 }
 .header__navbar-item--strong{
     font-weight: 400;
+    
 }
 
 .header__navbar-item--seperate::after{
     content: "";
     display: block;
     position: absolute;
-    height: 1.5rem;
+    height: 1.4rem;
     
     /* width: 0.1rem;
     background-color: #FB9086; */
@@ -62,7 +64,7 @@
 }
 
 .header__navbar-icon{
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     margin: 0 4px;
 }
 
