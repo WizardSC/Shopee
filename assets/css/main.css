@@ -477,9 +477,16 @@
     border-left: 1px solid #ccc;
     padding-left: 16px;
     position: relative;
+    
 }
+.header__search-input-wrap{
+    flex: 1;  /* tuong tu width: 100% */
+    height: 100%;
+    position: relative;
+}
+
 .header__search-input{
-    flex: 1; /* tuong tu width: 100% */
+    width: 100%;
     height: 100%;
     border: none;
     outline: none;
@@ -519,25 +526,123 @@
     background-color: #fb6445;
     cursor: pointer;
 }
-
+/* Tạo cầu nối */
+.header__search-option::before{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 20px;
+    
+    top: -20px;
+    left: 0;
+}
 .header__search-option{
     position: absolute;
     right: 0;
-    top: 100%;
+    top: 125%;
     list-style-type: none;
+    box-shadow: 0 1px 2px #ccc;
+    padding: 0;
+    border-radius: 3px;
+    /* overflow: hidden; */
+    display: none;
+    animation: fadeIn ease-in 0.2s;
+}
+
+.header__search-select:hover .header__search-option{
+    display: block;
+    cursor: pointer;
 }
 .header__search-option-item{
     background-color: var(--white-color);
-    border-radius: 3px;
+    height: 35px;
     padding: 8px;
+    width: 140px;
+    
+    display: flex;
+    align-items: center;
+    
+    
+}
+.header__search-option-item:first-child{
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.header__search-option-item:last-child{
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
 }
 
 .header__search-option-item span{
     font-size: 1.4rem;
     color: var(--text-color); 
+    margin-left: 8px;
+    padding-right: 12px;
+    
 }
-
+.header__search-option-item:hover{
+    background-color: #fafafa;
+    cursor: pointer;
+}
 .header__search-option-item i {
     font-size: 1.4rem;
     color: var(--primary-color);
+    margin: 0 0 0 12px;
+    display: none
+}
+
+.header__search-option-item--active i{
+    display: inline-block;
+}
+.header__search-input:focus ~ .header__search-history{
+    display: block;
+}
+/* Search history */
+.header__search-history{
+    position: absolute;
+    top: calc(100% + 10%);
+    left: 0;
+    width: calc(100% - 16px); 
+    background-color: var(--white-color);
+    box-shadow: 0 1px 5px #999;
+    border-radius: 2px;
+    display: none;
+}   
+
+.header__search-history-heading{
+    color: #999;
+    margin: 8px 12px;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.header__search-history-list{
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 0    ;
+}
+
+.header__search-history-item{
+    height: 40px;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+
+}
+
+.header__search-history-item:last-child{
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+.header__search-history-item:hover{
+    cursor: pointer;
+    background-color: #fafafa;
+}
+.header__search-history-item a{
+    text-decoration: none;
+    color: rgba(0,0,0,.87);
+    font-size: 1.4rem;
+
 }
