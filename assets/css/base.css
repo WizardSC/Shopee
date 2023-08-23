@@ -55,6 +55,14 @@ html {
     }
 }
 
+@keyframes growth{
+    from {
+        transform: scale(var(--growth-form));
+    }
+    to {
+        transform: scale(var(--growth-to));
+    }
+}
 /* Modal layout */
 .modal{
     position: fixed;
@@ -63,6 +71,7 @@ html {
     bottom: 0;
     left: 0;
     display: flex;
+    animation: fadeIn linear 0.1s;
 }
 
 .modal__overlay{
@@ -74,12 +83,14 @@ html {
 }
 
 .modal__body{
-    
-    background-color: var(--white-color);
-    border-radius: 5px;
+    --growth-from: 0.7;
+    --growth-to: 1;
+   
     margin: auto;
     position: relative;
     z-index: 1;
+
+    animation: growth linear 0.1s;
 }
 
 /* Button style dùng chung */
@@ -90,11 +101,15 @@ html {
     border: none;
     border-radius: 2px;
     font-size: 1.5rem;
-    padding: 0;
+    padding: 0 12px;
     color: var(--text-color);
-    background-color: var(--white-color);
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.6rem;
 }
-.btn:hover{
+.btn.btn--normal:hover{
     cursor: pointer;
     background-color: rgba(0,0,0,0.05);
 }
@@ -113,4 +128,11 @@ html {
     cursor: default;
     color: #949494;
     background-color: #c3c3c3;
+}
+
+.btn.btn--size-s{
+    height: 32px;
+    font-size: 1.2rem;
+    justify-content: space-around;
+    padding: 0 8px;
 }
