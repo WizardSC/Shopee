@@ -97,6 +97,7 @@
     border-radius: 2px;
     display: none;
     animation: fadeIn ease-in 0.2s;
+    z-index: 20;
 }
 
 /* Tạo 1 cái cầu nối giữa thẻ li Tải ứng dụng và QR Code Download */
@@ -162,6 +163,8 @@
     transform-origin: calc(100% - 20px) 0;
     will-change: opacity, transform;
     display: none;
+
+    z-index: 20;
 }
 
 .header__notify::before {
@@ -644,5 +647,67 @@
     text-decoration: none;
     color: rgba(0,0,0,.87);
     font-size: 1.4rem;
+    display: block;
+}
 
+/* Card layout */
+
+
+.header__cart{
+    width: 140px;
+    
+}
+
+.header__cart-wrap{
+    position: relative;
+    display: inline-block;
+    padding: 4px 8px;
+    cursor: pointer;
+}
+.header__cart-wrap:hover .header__cart-list{
+    cursor: pointer;
+    display: block;
+}
+.header__cart-icon{
+
+}
+.header__cart-list::before{
+    content: "";
+    position: absolute;
+    right: 8px;
+    top: -20px;
+    border-width: 11px;
+    border-style: solid;
+    border-color: transparent transparent var(--white-color) transparent;
+
+}
+.header__cart-list {
+    position: absolute;
+    top: calc(100% + 19%);
+    right: 3px;
+    background-color: var(--white-color);
+    width: 410px;
+    border-radius: 2px;
+    box-shadow: 0 1px 3.125rem 0 rgba(0,0,0,0.2);
+    display: none;
+    animation: fadeIn ease-in 0.2s;
+}
+
+.header__cart-list::after{
+    
+}
+
+.header__cart-list--no-cart{
+    padding: 28px 0;
+}
+.header__cart-no-cart-img{
+    width: 20%;
+    
+}
+
+.header__cart-list-no-card-msg{
+    display: block;
+    font-size: 1.4rem;
+    color: #716969;
+    margin-top: 10px;
 }
