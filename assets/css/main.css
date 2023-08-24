@@ -68,7 +68,8 @@
     color: var(--white-color);
     text-decoration: none;
 }
-.header__navbar-icon-link:nth-child(2){
+
+.header__navbar-icon-link:nth-child(2) {
     margin-left: 4px;
 }
 
@@ -90,6 +91,74 @@
 
 }
 
+/* Header navbar language */
+.header__navbar-language:hover .header__navbar-language-list {
+    display: block;
+}
+
+.header__navbar-language-list {
+    list-style-type: none;
+    position: absolute;
+    top: 150%;
+    right: 0;
+    background-color: var(--white-color);
+    padding-left: 0;
+    width: 120px;
+    border-radius: 2px;
+    z-index: 1;
+
+    box-shadow: 0 1px 3.125rem 0 rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.header__navbar-language-list::before {
+    content: "";
+    position: absolute;
+    top: -18px;
+    right: 46px;
+    border-width: 9px 11px;
+    border-style: solid;
+    border-color: transparent transparent var(--white-color) transparent;
+
+}
+
+.header__navbar-language-list::after{
+    content: "";
+    position: absolute;
+    top: -15px;
+    right: 0;
+    width: 80%;
+    height: 20px;
+   
+}
+
+.header__navbar-language-item {
+    color: var(--text-color);
+    font-size: 1.4rem;
+    font-weight: 400;
+
+}
+
+.header__navbar-language-list li {
+    padding: 12px;
+}
+
+.header__navbar-language-list li:first-child {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+.header__navbar-language-list li:last-child {
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.header__navbar-language-list li:hover {
+    background-color: #fafafa;
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
 /* Header navbar user */
 .header__navbar-user {
     display: flex;
@@ -105,7 +174,7 @@
 }
 
 .header__navbar-user-name {
-    margin-left: 8px;
+    margin-left: 4px;
     font-size: 1.4rem;
     font-weight: 400;
 }
@@ -142,8 +211,9 @@
     right: 25px;
 
 }
+
 /* Lam cau noi */
-.header__navbar-user-menu::after{
+.header__navbar-user-menu::after {
     display: block;
     position: absolute;
     top: -6px;
@@ -151,7 +221,11 @@
     content: "";
     width: 70%;
     height: 10px;
-  
+
+}
+
+.header__navbar-user-item--seperate {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .header__navbar-user-item a {
@@ -251,11 +325,12 @@
     cursor: default;
 
     animation: headerNotifyGrowth ease-in 0.2s;
-    transform-origin: calc(100% - 20px) 0;
+    transform-origin: calc(100% - 60px) 0;
     will-change: opacity, transform;
     display: none;
 
     z-index: 20;
+    border-radius: 2px;
 }
 
 .header__notify::before {
@@ -277,6 +352,7 @@
     position: absolute;
     top: -1px;
     right: 25px;
+
 
 }
 
@@ -303,12 +379,14 @@
     font-weight: 400;
     font-size: 1.5rem;
     line-height: 40px;
-
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
 }
 
 .header__notify-list {
     padding-left: 0;
     list-style-type: none;
+
 }
 
 .header__notify-item {
@@ -359,6 +437,8 @@
 
 .header__notify-footer {
     display: flex;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
 
 }
 
@@ -532,7 +612,7 @@
 
 /* Header with search */
 .header-with-search {
-    padding-top: 8px;
+    padding-top: 0px;
     height: var(--header-with-search-height);
     display: flex;
     align-items: center;
@@ -547,6 +627,11 @@
 .header__logo-img {
     width: 160px;
     height: 50px;
+}
+
+.header__logo-link {
+    color: transparent;
+    text-decoration: none;
 }
 
 .header__search {
@@ -645,7 +730,7 @@
 .header__search-option {
     position: absolute;
     right: 0;
-    top: 125%;
+    top: calc(140% - 1px);
     list-style-type: none;
     box-shadow: 0 1px 2px #ccc;
     padding: 0;
@@ -758,6 +843,29 @@
     color: rgba(0, 0, 0, .87);
     font-size: 1.4rem;
     display: block;
+}
+
+/* Header search with selection */
+.header__search-with-selection {
+    width: 180%;
+}
+
+.header__search-with-selection-list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding-left: 0px;
+
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+.header__search-with-selection-item a {
+    font-size: 1.2rem;
+    color: var(--white-color);
+    font-weight: 350;
+    text-decoration: none;
+    margin-right: 12px;
 }
 
 /* Card layout */

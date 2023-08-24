@@ -152,6 +152,25 @@
                                 Trợ giúp
                             </a>
                         </li>
+                        <!-- Header navbar language -->
+                        <li class="header__navbar-item header__navbar-language">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon fa-solid fa-globe"></i>
+                                Tiếng Việt
+                                <i class="header__navbar-icon fa-solid fa-chevron-down"></i>
+                            </a>
+
+                            <ul class="header__navbar-language-list">
+                                <li class="header__navbar-language-item">
+                                    <span>Tiếng Việt</span>
+                                </li>
+                                <li class="header__navbar-language-item">
+                                    <span>English</span>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- Header navbar language -->
+
                         <li class="header__navbar-item header__navbar-user">
                             <img src="./assets/img/so_jung_hwan.jpg" alt="" class="header__navbar-user-img">
                             <span class="header__navbar-user-name">WizardSC</span>
@@ -163,7 +182,7 @@
                                 <li class="header__navbar-user-item">
                                     <a href="">Đơn mua</a>
                                 </li>
-                                <li class="header__navbar-user-item">
+                                <li class="header__navbar-user-item header__navbar-user-item--seperate">
                                     <a href="">Đăng xuất</a>
                                 </li>
                             </ul>
@@ -178,12 +197,17 @@
                 <!-- Header with search -->
                 <div class="header-with-search">
                     <div class="header__logo">
-                        <img class="header__logo-img" src="assets/img/logo-full-white.png" alt="">
-                    </div>  
+                        <a href="/" class="header__logo-link">
+                            <img class="header__logo-img" src="assets/img/logo-full-white.png" alt="">
+
+                        </a>
+                    </div>
 
                     <div class="header__search">
+                        
                         <div class="header__search-input-wrap">
-                            <input type="text" class="header__search-input" placeholder="Shopee bao ship 0Đ - Đăng ký ngay!">
+                            <input type="text" class="header__search-input"
+                                placeholder="Shopee bao ship 0Đ - Đăng ký ngay!">
                             <!-- Search history -->
                             <div class="header__search-history">
                                 <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
@@ -196,20 +220,48 @@
                                     </li>
                                 </ul>
                             </div>
+                            <div class="header__search-with-selection">
+                                <ul class="header__search-with-selection-list">
+                                    <li class="header__search-with-selection-item">
+                                        <a href="">Bắp Rang Bơ</a>
+                                    </li>
+                                    <li class="header__search-with-selection-item">
+                                        <a href="">Mực Tẩm Xé Sợi</a>
+                                    </li>
+                                    <li class="header__search-with-selection-item">
+                                        <a href="">Nui Sấy</a>
+                                    </li>
+                                    <li class="header__search-with-selection-item">
+                                        <a href="">Cơm Cháy Gạo Lứt Chà</a>
+                                    </li>
+                                    <li class="header__search-with-selection-item">
+                                        <a href="">Cơm Cháy Chà Bông</a>
+                                    </li>
+                                    <li class="header__search-with-selection-item">
+                                        <a href="">Cơm Cháy Minh Châu</a>
+                                    </li>
+                                    <li class="header__search-with-selection-item">
+                                        <a href="">Hàng Boom</a>
+                                    </li>
+                                    <li class="header__search-with-selection-item">
+                                        <a href="">Hộp Cơm Thủy Tinh</a>
+                                    </li>
+                                </ul>
+                            </div>
                             <!-- Search history -->
                         </div>
                         <div class="header__search-select">
-                            
+
                             <span class="header__search-select-label">Trong shop</span>
                             <i class="header__search-select-icon fa-solid fa-chevron-down"></i>
 
                             <ul class="header__search-option">
                                 <li class="header__search-option-item header__search-option-item--active">
-                                    <span>Trong shop</span>   
+                                    <span>Trong shop</span>
                                     <i class="fa-solid fa-check"></i>
                                 </li>
                                 <li class="header__search-option-item ">
-                                    <span>Ngoài shop</span>   
+                                    <span>Ngoài shop</span>
                                     <i class="fa-solid fa-check"></i>
                                 </li>
                             </ul>
@@ -235,13 +287,14 @@
                                         <img src="./assets/img/giay_tham_dau.jpg" alt="" class="header__cart-img">
                                         <div class="header__cart-item-info">
                                             <div class="header__cart-item-head">
-                                                <h5 class="header__cart-item-name">Giấy thấm dầu da mặt Mayan Oil Control Paper từ chất liệu cao cấp, thấm hút dầu tốt</h5> 
+                                                <h5 class="header__cart-item-name">Giấy thấm dầu da mặt Mayan Oil
+                                                    Control Paper từ chất liệu cao cấp, thấm hút dầu tốt</h5>
                                                 <div class="header__cart-item-price-wrap">
                                                     <span class="header__cart-item-price">22.500đ</span>
                                                     <span class="header__cart-item-multiply">x</span>
                                                     <span class="header__cart-item-quantity">2</span>
                                                 </div>
-                                                
+
                                             </div>
 
                                             <div class="header__cart-item-body">
@@ -259,13 +312,14 @@
                                         <img src="./assets/img/kem_nghe_thorakao.jpg" alt="" class="header__cart-img">
                                         <div class="header__cart-item-info">
                                             <div class="header__cart-item-head">
-                                                <h5 class="header__cart-item-name">Kem nghệ Thorakao 7g làm mờ các vết thâm, sẹo, giúp tái tạo da</h5> 
+                                                <h5 class="header__cart-item-name">Kem nghệ Thorakao 7g làm mờ các vết
+                                                    thâm, sẹo, giúp tái tạo da</h5>
                                                 <div class="header__cart-item-price-wrap">
                                                     <span class="header__cart-item-price">30.500đ</span>
                                                     <span class="header__cart-item-multiply">x</span>
                                                     <span class="header__cart-item-quantity">1</span>
                                                 </div>
-                                                
+
                                             </div>
 
                                             <div class="header__cart-item-body">
@@ -283,13 +337,14 @@
                                         <img src="./assets/img/dau_an_tuong_an.jpg" alt="" class="header__cart-img">
                                         <div class="header__cart-item-info">
                                             <div class="header__cart-item-head">
-                                                <h5 class="header__cart-item-name">Dầu thực vật Tường An Cooking oil 1l</h5> 
+                                                <h5 class="header__cart-item-name">Dầu thực vật Tường An Cooking oil 1l
+                                                </h5>
                                                 <div class="header__cart-item-price-wrap">
                                                     <span class="header__cart-item-price">50.000đ</span>
                                                     <span class="header__cart-item-multiply">x</span>
                                                     <span class="header__cart-item-quantity">1</span>
                                                 </div>
-                                                
+
                                             </div>
 
                                             <div class="header__cart-item-body">
@@ -310,7 +365,7 @@
                             </div>
                         </div>
 
-                        
+
                     </div>
                     <!-- Cart layout -->
                 </div>
