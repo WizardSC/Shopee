@@ -122,8 +122,8 @@ html {
     font-size: 1.5rem;
     padding: 0 12px;
     color: var(--text-color);
-    background-color: transparent;
-    display: flex;
+    background-color: var(--white-color);
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     line-height: 1.6rem;
@@ -154,4 +154,27 @@ html {
     font-size: 1.2rem;
     justify-content: space-around;
     padding: 0 8px;
+}
+
+/* Selection */
+.select-input{
+    padding: 0 12px;
+    border-radius: 2px;
+    height: 34px;
+    min-width: 200px;
+    background-color:var(--white-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.select-input__label{
+    font-size: 1.4rem;
+
+}
+.select-input__icon{
+    font-size: 1.4rem;
+    color: rgb(131,131,131);
+    position: relative;
+    top: 1px;
 }
