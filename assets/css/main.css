@@ -1233,3 +1233,122 @@
 .home-filter__page-btn--disabled .home-filter__page-icon {
     color: #ccc
 }
+
+/* Product item */
+.home-product-item{
+    margin-top: 10px;
+    background-color: var(--white-color);
+}
+.home-product-item-wrap {
+    padding: 8px;
+}
+.home-product-item__img{
+    padding-top: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    
+}
+.home-product-item__name{
+    margin: 0;
+    margin-bottom: 10px;
+    height: 2.7rem;
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, .87);
+    line-height: 1.4rem;
+    font-weight: 400;
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+}
+.home-product-item__price{
+    display: flex;
+    align-items: center;
+    
+    
+}
+.home-produc-item__seperate{
+    font-size: 1.6rem;
+    color: var(--primary-color);
+}
+.home-product-item__price-wrap{
+    display: flex;
+    align-items: center;
+    
+    
+}
+.home-product-item__price-wrap:first-child{
+    margin-right: 8px;
+}
+
+.home-product-item__price-wrap:last-child{
+    margin-left: 8px;
+}
+.home-product-item__price-currency{
+    font-size: 1.2rem;
+    text-decoration: underline;
+    color: var(--primary-color);
+}
+.home-product-item__price-currency--old{
+    color: rgba(0,0,0,0.54);
+    text-decoration: line-through underline;
+    font-size: 1.2rem;
+}
+.home-product-item__price-start{
+    font-size: 1.6rem;
+    color: var(--primary-color);
+}
+.home-product-item__price-start--old{
+    color: rgba(0,0,0,0.54);
+    text-decoration: line-through;
+    font-size: 1.4rem;
+    margin-right:-10px;
+}
+
+.home-product-item__price-current{
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    /* Dùng khi tràn giá */
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 110px;
+    /* Dùng khi tràn giá */
+}
+.home-product-item__seperate{
+    font-size: 1.6rem;
+    color: var(--primary-color);
+}
+.home-product-item__seperate--old{
+    display: none;
+}
+.home-product-item__action{
+
+}
+.home-product-item__like{
+
+}
+.home-product-item__rating{
+
+}
+.home-product-item__origin{
+
+}
+.home-product-item__origin-name{
+
+}
+.home-product-item__favorite{
+
+}
+.home-product-item__sale-off{
+
+}
+.home-product-item__sale-off-percent{
+
+}
+.home-product-item__sale-off-label{
+
+}
