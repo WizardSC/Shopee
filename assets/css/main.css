@@ -635,6 +635,7 @@
 }
 
 .header__search {
+    position: relative;
     height: 40px;
     flex: 1;
     border-radius: 2px;
@@ -847,6 +848,7 @@
 
 /* Header search with selection */
 .header__search-with-selection {
+    position: absolute;
     width: 180%;
 }
 
