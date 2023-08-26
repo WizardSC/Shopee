@@ -1499,3 +1499,14 @@ i.home-product-item__like-icon--liked{
     border-style: solid;
     border-color: currentColor currentColor transparent currentColor;
 }
+
+/* Pagination */
+.home-product__pagination{
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+/* Footer */
+.footer{
+    
+}
