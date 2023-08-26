@@ -1378,12 +1378,75 @@ i.home-product-item__like-icon--liked{
 .home-product-item__favorite{
 
 }
-.home-product-item__sale-off{
 
+
+/* Nhãn yêu thích */
+.home-product-item__favorite{
+    position: absolute;
+    top: 10px;
+    left: -4px;
+    color: var(--primary-color);
+    background-color: currentColor;
+    font-size: 1.2rem;
+    
+    padding: 0 4px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+/* Dùng currentColor để nó ăn theo màu của phần tử cha */
+.home-product-item__favorite span{
+    color: var(--white-color);
+
+}
+.home-product-item__favorite::before{
+    content: "";
+    position: absolute;
+    bottom: -4.6px;
+    left: 0px;
+    border-left: 4.3px solid transparent;
+    border-top: 4.6px solid currentColor;
+    filter: brightness(0.6);
+}
+
+/* Nhãn giảm giá */
+.home-product-item__sale-off{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: rgba(255, 212, 36, 0.9);
+    background-color: currentColor;
+    height: 36px;
+    width: 37.8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    
 }
 .home-product-item__sale-off-percent{
-
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    color: var(--primary-color);
+    font-weight: 400;
+    margin-bottom: -3px;
 }
 .home-product-item__sale-off-label{
+    margin-top: -3px;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    color: var(--white-color);
+    font-weight: 400;
+}
 
+.home-product-item__sale-off::after{
+    content: "";
+    position: absolute;
+    bottom: -5.8px;
+    right: 0;
+    border-width: 0 19.3px 6px;
+    border-style: solid;
+    border-color: currentColor currentColor transparent currentColor;
 }
