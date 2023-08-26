@@ -1666,15 +1666,20 @@ i.home-product-item__like-icon--liked {
 }
 
 .footer-region__country{
-    padding: 0 5px;
+    padding: 0 6px;
+    
     border-right: 1px solid rgba(0, 0, 0, 0.2);
 
+}
+.footer-region__country:last-child{
+    border: none;
 }
 .footer_region-country-name{
     text-decoration: none;
     color: rgba(0, 0, 0, 0.54);
+    line-height: 1.4;
 }
 
-.footer-2{
+.footer__bottom{
     background-color: #f5f5f5;
 }

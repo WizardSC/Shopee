@@ -24,11 +24,13 @@ html {
 }
 /* Responsive */
 .grid {
+    /* Screen wide > 1200px: w = 1200*/
     width: 1150px;
-    /* max-width: 1%; */
-    
+    /* Screen wide < 1200px: w = 100%*/
+    max-width: 100%;
     margin: 0 auto;
-}
+  }
+  
 
 .grid__full-width {
     width: 100%;
