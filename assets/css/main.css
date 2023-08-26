@@ -262,7 +262,9 @@
     border-radius: 2px;
     display: none;
     animation: fadeIn ease-in 0.2s;
-    z-index: 20;
+    z-index: 1;
+    
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 /* Tạo 1 cái cầu nối giữa thẻ li Tải ứng dụng và QR Code Download */
@@ -734,6 +736,7 @@
     /* overflow: hidden; */
     display: none;
     animation: fadeIn ease-in 0.2s;
+    z-index: 1;
 }
 
 .header__search-select:hover .header__search-option {
@@ -801,6 +804,7 @@
     box-shadow: 0 1px 5px #999;
     border-radius: 2px;
     display: none;
+    z-index: 1;
 }
 
 .header__search-history-heading {
@@ -910,6 +914,7 @@
     display: none;
     animation: fadeIn ease-in 0.2s;
     cursor: default;
+    z-index: 1;
 }
 
 .header__cart-list::after {}
@@ -1235,10 +1240,24 @@
 }
 
 /* Product item */
+.home-product-item-wrapper{
+    margin-bottom: 10px;
+}
 .home-product-item{
     margin-top: 10px;
     background-color: var(--white-color);
     position: relative;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    transition: transform linear 0.1s;
+    will-change: transform;
+    display: block;
+    text-decoration: none;
+}
+.home-product-item:hover{
+    box-shadow: 0 1px 20px 0 rgba(0,0,0,.05);
+    transform: translateY(-1px);
 }
 .home-product-item-wrap {
     padding: 8px;
