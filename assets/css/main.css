@@ -908,7 +908,7 @@
     top: calc(100% + 19%);
     right: 3px;
     background-color: var(--white-color);
-    width: 410px;
+    width: 420px;
     border-radius: 2px;
     box-shadow: 0 1px 3.125rem 0 rgba(0, 0, 0, 0.2);
     display: none;
@@ -972,8 +972,25 @@
     padding-left: 0;
     /* do mặc định thẻ ul có padding-left: 40 */
     list-style-type: none;
+    overflow-y: auto;
+    height: 48vh;
+    margin: 10px 0 0 0;
+    /* phần tử đó sẽ chiếm đến 48% của không gian chiều cao 
+    hiển thị trong trình duyệt của người dùng. Khi kích thước cửa sổ 
+    trình duyệt thay đổi, chiều cao của phần tử cũng sẽ thay đổi 
+    tương ứng để duy trì tỷ lệ 48% theo viewport height. */
 }
 
+.header__cart-wrap::after{
+    position: absolute;
+    content: "";
+    width: 130%;
+    height: 30px;
+    top: 20px;
+    right: 5px;
+    cursor: default;
+    
+}
 .header__cart-item {
     display: flex;
     align-items: center;
@@ -990,7 +1007,7 @@
     margin: 12px;
     border: 1px solid #ccc;
     background-size: cover;
-
+    flex-shrink: 0; /* không cho phép ảnh co nhỏ lại */
 }
 
 /*  text-overflow: ellipsis; overflow: hidden; white-space: nowrap; max-width: 180px; */
@@ -1285,7 +1302,19 @@
     text-overflow: ellipsis;
     -webkit-line-clamp: 2;
 }
+.home-product-item__promo{
+    margin-top: 8px;
+}
+.home-product-item__promo-name{
+    font-size: 1rem;
+    line-height: 1rem;
+    padding: 2px 4px;
+    color: rgb(255,0,32);
+    border: 1px solid currentColor;
+    
+}
 .home-product-item__price{
+    padding-top: 8px;
     display: flex;
     align-items: center;
     
@@ -1346,6 +1375,7 @@
 .home-product-item__seperate--old{
     display: none;
 }
+
 .home-product-item__action{
     display: flex;
     margin-top: 12px;
