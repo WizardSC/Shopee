@@ -1238,6 +1238,7 @@
 .home-product-item{
     margin-top: 10px;
     background-color: var(--white-color);
+    position: relative;
 }
 .home-product-item-wrap {
     padding: 8px;
@@ -1340,7 +1341,12 @@
     margin-right: 6px;
 }
 .home-product-item__rating-icon{
-    color: #ffce3d;
+    color: rgb(213, 213, 213);
+    transform: scale(1);
+    font-size: 0.9rem;
+}
+.home-product-item__rating-icon--gold{
+    color: var(--star-gold-color);
     transform: scale(1);
     font-size: 0.9rem;
 }
